@@ -1,0 +1,30 @@
+from djitellopy import Tello
+from time import sleep
+
+feet = 30
+
+tello = Tello()
+
+tello.connect()
+
+sleep(2)
+tello.takeoff()
+
+tello.move_up(180)
+
+sleep(2)
+tello.move_forward(10*feet)
+
+sleep(2)
+tello.move_left(10*feet)
+
+sleep(2)
+tello.move_back(10*feet)
+
+sleep(2)
+tello.move_right(10*feet)
+
+tello.flip_back
+
+tello.land()
+tello.end
