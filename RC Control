@@ -17,5 +17,7 @@ tello.send.rc_control(0, 0, -50, 0)
 sleep(2.7)
 tello.send.rc_control(0, 0, 0, 0)
 
+tello.flip_forward()
+
 tello.land()
 tello.end()
