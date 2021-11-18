@@ -7,7 +7,7 @@ tello.connect()
 print(tello.get_battery())
 
 tello.takeoff()
-tello.move_up(91)
+tello.move_up(101)
 sleep(2)
 
 tello.move_forward(152)
