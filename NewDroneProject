@@ -1,0 +1,41 @@
+from djitellopy import Tello
+from time import sleep
+
+tello = Tello()
+
+tello.connect()
+print(tello.get_battery())
+
+#take off 6 feet
+tello.takeoff()
+tello.move_up(91)
+sleep(2)
+
+#fly forward x feet
+tello.move_forward(3542)
+sleep(2)
+
+#turn towards cafeteria
+tello.rotate_counter_clockwise(90)
+sleep(2)
+
+#photo
+
+sleep(2)
+
+#turn to library
+tello.rotate_counter_clockwise(90)
+sleep(2)
+
+#fly forward
+tello.move_forward(3542)
+sleep(2)
+
+#move up to middle school library
+tello.move_up(3000)
+
+#take photo
+
+
+tello.land()
+tello.end()
